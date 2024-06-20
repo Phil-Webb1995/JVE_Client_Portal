@@ -1,7 +1,7 @@
 console.log("validation.js loaded...");
 
 const form = document.getElementById("contact-form");
-
+if (form) {
 form.addEventListener("submit", function (event) {
     event.preventDefault();
 
@@ -21,3 +21,4 @@ form.addEventListener("submit", function (event) {
         document.getElementById("email-error").innerText = "Invalid Email";
     return false;
 });
+}
